@@ -1,0 +1,139 @@
+body, *::after, *::after {
+  box-sizing: border-box;
+}
+
+/* Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  background-color: #ECF2F8
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height:2.4rem;
+}
+
+h2 {
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+main {
+  height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.graduate {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  padding-top: 0;
+  opacity: 0.5;
+}
+
+.font_dark {
+  color: #48556A;
+}
+
+.font_dark > p {
+  opacity: 0.7
+}
+
+/* Central Section */
+
+section {
+  width: 111rem;
+  height: 57.2rem;
+}
+
+
+/* Grid configuration */
+
+.grid {
+  display: grid;
+  grid-template-areas: 'dc dc jw kw'
+                       'jh pa pa kw';
+  grid-gap: 2.4rem;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+
+
+#div1 {
+  grid-area: dc;
+  background-color: #733FC8;
+}
+
+#div2 {
+  grid-area:jw;
+  background-color: #48556A;
+  }
+
+#div3 {
+  grid-area:kw;
+  background-color: #FFFFFF;
+  }
+#div4 {
+  grid-area:jh;
+  background-color: #FFFFFF;
+}
+
+#div5 {
+  grid-area: pa;
+  background-color: #19202D;
+}
+
+
+/* Inner elements */
+
+.grid >div {
+  border-radius: 2rem;
+}
+
+.inner_content {
+  margin: 3.2rem;
+}
+
+.inner_content > p {
+  padding-top: 1.6rem;
+  opacity: 0.7;
+}
+
+.inner_picture {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.8rem;
+}
+
+.inner_picture > img {
+  border: 2px solid #A775F1;
+  height: 2.8rem;
+  border-radius: 1.4rem;
+}
+
+.inner_picture > div {
+  margin-left: 1.5rem;
+}
+
+.inner_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+
+}
