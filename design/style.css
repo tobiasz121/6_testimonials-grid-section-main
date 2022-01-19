@@ -76,6 +76,10 @@ section {
 #div1 {
   grid-area: dc;
   background-color: #733FC8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-position: 82% 0%;
+  background-repeat: no-repeat;
+  background-size: auto 11rem;
 }
 
 #div2 {
